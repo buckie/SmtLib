@@ -1,0 +1,12 @@
+# stack yaml for ghc builds
+
+resolver: lts-6.12
+
+packages:
+- '.'
+
+extra-deps: []
+
+flags: {}
+
+extra-package-dbs: []

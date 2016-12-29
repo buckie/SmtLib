@@ -1,5 +1,5 @@
 {-|
-Module      : Smtlib.Parsers.CommandsParsers
+Module      : SmtLib.Parsers.CommandsParsers
 Description : Common parsers for commands and responses.
 Copyright   : Rogério Pontes 2015
 License     : WTFPL
@@ -8,7 +8,7 @@ Stability   : stable
 
 This module contains some auxiliar parsers, used to parse commands or responses.
 -}
-module Smtlib.Parsers.CommonParsers where
+module SmtLib.Parsers.CommonParsers where
 
 
 {-
@@ -20,7 +20,7 @@ import           Control.Applicative               as Ctr hiding ((<|>))
 import           Data.Functor.Identity
 import           Text.Parsec.Prim                  as Prim
 import           Text.ParserCombinators.Parsec     as Pc
-import           Smtlib.Syntax.Syntax
+import           SmtLib.Syntax.Syntax
 import           Control.Monad
 
 (<:>) :: Applicative f => f a -> f [a] -> f [a]

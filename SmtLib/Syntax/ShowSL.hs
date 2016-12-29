@@ -1,5 +1,5 @@
 {-|
-Module      : Smtlib.Syntax.ShowSL
+Module      : SmtLib.Syntax.ShowSL
 Description : Instance to print the syntax.
 Copyright   : Rogério Pontes 2015
 License     : WTFPL
@@ -9,10 +9,10 @@ Stability   : stable
 Functions to print the syntax as a SMTLib.
 
 -}
-module Smtlib.Syntax.ShowSL where
+module SmtLib.Syntax.ShowSL where
 
 import           Data.List
-import           Smtlib.Syntax.Syntax
+import           SmtLib.Syntax.Syntax
 
 
 

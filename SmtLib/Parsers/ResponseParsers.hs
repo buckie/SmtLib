@@ -1,24 +1,24 @@
 {-|
-Module      : Smtlib.Parsers.ResponseParsers
-Description : Parsers for Smtlib commands response.
+Module      : SmtLib.Parsers.ResponseParsers
+Description : Parsers for SmtLib commands response.
 Copyright   : Rogério Pontes 2015
 License     : WTFPL
 Maintainer  : rogerp62@outlook.com
 Stability   : stable
 
 This module contains all the required individual parsers for each reasponse to 
-a Smtlib command, plus one parser to parse every result, parseCmdResult.
+a SmtLib command, plus one parser to parse every result, parseCmdResult.
 
 -}
 
-module Smtlib.Parsers.ResponseParsers where
+module SmtLib.Parsers.ResponseParsers where
 
 import           Control.Applicative           as Ctr hiding ((<|>))
 import           Control.Monad
 import           Data.Functor.Identity
-import           Smtlib.Parsers.CommonParsers
-import           Smtlib.Parsers.CommandsParsers
-import           Smtlib.Syntax.Syntax        as CmdRsp
+import           SmtLib.Parsers.CommonParsers
+import           SmtLib.Parsers.CommandsParsers
+import           SmtLib.Syntax.Syntax        as CmdRsp
 import           Text.Parsec.Prim              as Prim
 import           Text.ParserCombinators.Parsec as Pc
 

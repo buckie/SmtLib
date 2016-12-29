@@ -1,22 +1,22 @@
 {-|
-Module      : Smtlib.Parsers.CommandsParsers
-Description : Parsers for Smtlib Commands
+Module      : SmtLib.Parsers.CommandsParsers
+Description : Parsers for SmtLib Commands
 Copyright   : Rogério Pontes 2015
 License     : WTFPL
 Maintainer  : rogerp62@outlook.com
 Stability   : stable
 
-This module contains all the required individual parsers for each Smtlib command,
+This module contains all the required individual parsers for each SmtLib command,
 plus one parser to parse an entire SMTLib2 file, parseSource.
 
 -}
-module Smtlib.Parsers.CommandsParsers where
+module SmtLib.Parsers.CommandsParsers where
 
 import           Control.Applicative           as Ctr hiding ((<|>))
 import           Control.Monad
 import           Data.Functor.Identity
-import           Smtlib.Parsers.CommonParsers
-import           Smtlib.Syntax.Syntax
+import           SmtLib.Parsers.CommonParsers
+import           SmtLib.Syntax.Syntax
 import           Text.Parsec.Prim              as Prim
 import           Text.ParserCombinators.Parsec as Pc
 

@@ -2,7 +2,7 @@
 -- documentation, see http://haskell.org/cabal/users-guide/
 
 -- The name of the package.
-name:                Smtlib
+name:                SmtLib
 
 -- The package version.  See the Haskell package versioning policy (PVP)
 -- for standards guiding when and how versions should be incremented.
@@ -10,7 +10,7 @@ name:                Smtlib
 -- PVP summary:      +-+------- breaking API changes
 --                   | | +----- non-breaking API additions
 --                   | | | +--- code changes with no API change
-version:             0.1.0.5
+version:             0.1.0.6
 
 -- A short (one-line) description of the package.
 synopsis:            Library for parsing SMTLIB2
@@ -47,11 +47,11 @@ cabal-version:       >=1.10
 
 library
   -- Modules exported by the library.
-  exposed-modules:     Smtlib.Parsers.CommonParsers,
-                       Smtlib.Parsers.ResponseParsers,
-                       Smtlib.Parsers.CommandsParsers,
-                       Smtlib.Syntax.Syntax,
-                       Smtlib.Syntax.ShowSL
+  exposed-modules:     SmtLib.Parsers.CommonParsers,
+                       SmtLib.Parsers.ResponseParsers,
+                       SmtLib.Parsers.CommandsParsers,
+                       SmtLib.Syntax.Syntax,
+                       SmtLib.Syntax.ShowSL
 
   -- Modules included in this library but not exported.
   -- other-modules:
