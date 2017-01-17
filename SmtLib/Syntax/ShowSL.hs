@@ -47,11 +47,11 @@ instance ShowSL Command where
     " " ++ show val ++ ")"
   showSL (DefineSort str strs sort) = "(define-sort " ++ str ++
     " (" ++ unwords strs ++ ") " ++ showSL sort ++ ") "
-  showSL (DeclareConst str sort) = "(declare-fun  " ++ str ++
-    " " ++ showSL sort ++ ") "
-  showSL (DeclareFun  str sorts sort) = "(declare-fun  " ++ str ++
-    " ("  ++ joinA sorts ++ ") " ++ showSL sort ++ ") "
-  showSL (DefineFun str srvs sort term) = "( define-fun "   ++ str ++
+  showSL (DeclareConst str sort) = "(declare-fun " ++ str ++
+    " " ++ showSL sort ++ ")"
+  showSL (DeclareFun  str sorts sort) = "(declare-fun " ++ str ++
+    " ("  ++ joinA sorts ++ ") " ++ showSL sort ++ ")"
+  showSL (DefineFun str srvs sort term) = "(define-fun "   ++ str ++
     " (" ++ joinA srvs ++ ") " ++ showSL sort ++ " " ++ showSL term ++ ")"
   showSL (DefineFunRec str srvs sort term) = "(define-fun-rec "   ++ str ++
     " (" ++ joinA srvs ++ ") " ++ showSL sort ++ " " ++ showSL term ++ ")"
@@ -94,7 +94,7 @@ instance ShowSL Option where
   showSL (RandomSeed n) = ":random-seed " ++ show n
   showSL (Verbosity n) = ":verbosity " ++ show n
   showSL (ReproducibleResourceLimit n) = ":reproducible-resource-limit " ++ show n
-  showSL (OptionAttr attr) = show attr
+  showSL (OptionAttr attr) = showSL attr
 
 instance ShowSL InfoFlags where
   showSL ErrorBehavior = ":error-behavior"
